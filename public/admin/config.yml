@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "landing"
+    label: "Página de Inicio"
+    folder: "src/content/landing"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string", required: true }
+      - { label: "Subtítulo", name: "subtitulo", widget: "text", required: true }
+      - { label: "WhatsApp", name: "whatsapp", widget: "string", hint: "Número con código de país, ej: +57 300 1234567", required: true }
+      - { label: "Correo de Contacto", name: "email_contacto", widget: "string", hint: "Tu token Web3Forms o correo de contacto", required: true }
