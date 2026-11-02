@@ -7,26 +7,23 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-400">
-          🚗 Greislyn Auto
+    <nav className="bg-navy-900 text-white shadow-lg sticky top-0 z-50 border-b border-navy-800">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        <Link href="/" className="text-xl font-bold text-accent-red hover:text-accent-red-light transition duration-300">
+          Greislyn Auto
         </Link>
 
-        <div className="hidden md:flex gap-6">
-          <Link href="#catalogo" className="hover:text-blue-400 transition">
+        <div className="hidden md:flex gap-8">
+          <Link href="#catalogo" className="font-medium text-gray-200 hover:text-accent-red transition duration-300">
             Catálogo
           </Link>
-          <Link href="#contacto" className="hover:text-blue-400 transition">
+          <Link href="#contacto" className="font-medium text-gray-200 hover:text-accent-red transition duration-300">
             Contacto
-          </Link>
-          <Link href="/admin/login" className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition">
-            Admin
           </Link>
         </div>
 
         <button
-          className="md:hidden"
+          className="md:hidden text-2xl text-gray-200 hover:text-accent-red transition duration-300"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
@@ -34,15 +31,12 @@ export default function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-gray-800 px-4 py-4 space-y-2">
-          <Link href="#catalogo" className="block hover:text-blue-400">
+        <div className="md:hidden bg-navy-800 px-4 py-4 space-y-3 border-t border-navy-700 animate-slideUp">
+          <Link href="#catalogo" className="block font-medium text-gray-200 hover:text-accent-red transition duration-300">
             Catálogo
           </Link>
-          <Link href="#contacto" className="block hover:text-blue-400">
+          <Link href="#contacto" className="block font-medium text-gray-200 hover:text-accent-red transition duration-300">
             Contacto
-          </Link>
-          <Link href="/admin/login" className="block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
-            Admin
           </Link>
         </div>
       )}
