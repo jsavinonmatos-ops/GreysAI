@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "marca": "Toyota",
+    "modelo": "Corolla 2023",
+    "anio": 2023,
+    "precio": 25000000,
+    "descripcion": "Excelente estado, bajo kilometraje, mantenimiento al día",
+    "imagen": "/autos/corolla-2023.jpg",
+    "disponible": true,
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "2",
+    "marca": "Honda",
+    "modelo": "Civic 2022",
+    "anio": 2022,
+    "precio": 22000000,
+    "descripcion": "Automático, aire acondicionado, dirección hidráulica",
+    "imagen": "/autos/civic-2022.jpg",
+    "disponible": true,
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "3",
+    "marca": "Chevrolet",
+    "modelo": "Spark 2021",
+    "anio": 2021,
+    "precio": 18000000,
+    "descripcion": "Económico y confiable, perfecto para ciudad",
+    "imagen": "/autos/spark-2021.jpg",
+    "disponible": true,
+    "createdAt": "2026-11-02"
+  }
+]

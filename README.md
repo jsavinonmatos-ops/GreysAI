@@ -1,47 +1,55 @@
-# Astro Starter Kit: Basics
+# Greislyn Auto Import - Landing Page + Admin Panel
 
-```sh
-npm create astro@latest -- --template basics
+Aplicación web profesional para dealer de autos con landing page y panel administrativo.
+
+## 🚀 Stack Tecnológico
+
+- **Frontend:** Next.js 14 + React + Tailwind CSS
+- **Datos:** JSON (autos.json + config.json)
+- **Deploy:** Vercel
+- **Autenticación:** Contraseña simple
+
+## 📋 Características
+
+✅ Landing page profesional y responsive  
+✅ Catálogo de autos con filtros  
+✅ Formulario contacto (WhatsApp + Email)  
+✅ Panel admin con login  
+✅ CRUD completo de autos  
+✅ Gestión de configuración  
+✅ Almacenamiento en JSON  
+
+## 🛠 Instalación Local
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Accede a: `http://localhost:3000`
 
-## 🚀 Project Structure
+## 📍 URLs Principales
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Landing:** http://localhost:3000
+- **Admin Login:** http://localhost:3000/admin/login
+- **Admin Dashboard:** http://localhost:3000/admin/dashboard
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+## 🔐 Credenciales Admin (Testing)
+
+**Contraseña:** `greislyn2026`
+
+⚠️ Cambiar antes de producción
+
+## 🌐 Deploy a Vercel
+
+```bash
+npm install -g vercel
+vercel
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+O conectar GitHub directamente en Vercel.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# GreysAI
+**Versión:** 1.0.0
