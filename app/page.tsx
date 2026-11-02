@@ -1,6 +1,7 @@
 'use client'
 
 import NavBar from '@/components/NavBar'
+import HeroSection from '@/components/HeroSection'
 import AutoCard from '@/components/AutoCard'
 import AutoFilter from '@/components/AutoFilter'
 import FormContacto from '@/components/FormContacto'
@@ -13,25 +14,7 @@ export default function Home() {
     <main className="bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 min-h-screen">
       <NavBar />
 
-      {/* Hero Section */}
-      <section className="pt-20 pb-16 px-4">
-        <div className="max-w-6xl mx-auto text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-            {config.titulo}
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            {config.subtitulo}
-          </p>
-          <div className="pt-8">
-            <a
-              href="#catalogo"
-              className="inline-block bg-accent-red hover:bg-accent-red-light text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-accent-red/30"
-            >
-              Explorar Catálogo
-            </a>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Filtro */}
       <AutoFilterWrapper autos={autos} />

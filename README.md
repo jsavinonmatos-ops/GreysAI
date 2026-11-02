@@ -1,55 +1,80 @@
-# Greislyn Auto Import - Landing Page + Admin Panel
+# Greislyn Auto Import
 
-Aplicación web profesional para dealer de autos con landing page y panel administrativo.
+Plataforma web profesional para dealer de autos con landing page moderna y panel administrativo seguro.
 
-## 🚀 Stack Tecnológico
+## 🚀 Stack
 
 - **Frontend:** Next.js 14 + React + Tailwind CSS
-- **Datos:** JSON (autos.json + config.json)
+- **Datos:** JSON estático + localStorage
+- **Auth:** Contraseña fuerte + Validación de IP
 - **Deploy:** Vercel
-- **Autenticación:** Contraseña simple
 
-## 📋 Características
+## ✨ Características
 
-✅ Landing page profesional y responsive  
-✅ Catálogo de autos con filtros  
-✅ Formulario contacto (WhatsApp + Email)  
-✅ Panel admin con login  
+✅ Landing page responsiva con diseño deportivo (navy + rojo)  
+✅ Catálogo de autos con búsqueda y filtros  
+✅ Formulario de contacto (WhatsApp + Email)  
+✅ Panel admin seguro (`/admin-panel-xyz123`)  
 ✅ CRUD completo de autos  
-✅ Gestión de configuración  
-✅ Almacenamiento en JSON  
+✅ Animaciones suaves y elegantes  
+✅ Smooth scroll en navegación  
 
-## 🛠 Instalación Local
+## 🛠 Inicio Rápido
 
 ```bash
-# Instalar dependencias
 npm install
-
-# Ejecutar en desarrollo
 npm run dev
 ```
 
-Accede a: `http://localhost:3000`
+Luego abre `http://localhost:3000`
 
-## 📍 URLs Principales
+## 📍 URLs
 
-- **Landing:** http://localhost:3000
-- **Admin Login:** http://localhost:3000/admin/login
-- **Admin Dashboard:** http://localhost:3000/admin/dashboard
+| Página | URL |
+|--------|-----|
+| Landing | http://localhost:3000 |
+| Admin | http://localhost:3000/admin-panel-xyz123/login |
 
-## 🔐 Credenciales Admin (Testing)
+## 🔐 Admin
 
-**Contraseña:** `greislyn2026`
+**Contraseña:** `Greislyn@Auto2026!Seguro`
 
-⚠️ Cambiar antes de producción
+**Nota:** En localhost se permite acceso directo. En producción requiere IP autorizada.
 
-## 🌐 Deploy a Vercel
+## 📁 Estructura
 
-```bash
-npm install -g vercel
-vercel
+```
+app/
+├── page.tsx              (Landing)
+├── layout.tsx            (Root)
+├── globals.css           (Estilos globales)
+└── admin-panel-xyz123/   (Panel admin)
+
+components/
+├── NavBar.tsx            (Navegación)
+├── AutoCard.tsx          (Tarjeta auto)
+├── AutoFilter.tsx        (Filtros)
+└── FormContacto.tsx      (Formulario)
+
+data/
+├── autos.json
+└── config.json
 ```
 
-O conectar GitHub directamente en Vercel.
+## 🎨 Diseño
 
-**Versión:** 1.0.0
+- **Paleta:** Navy (#0a1428-#1a2d54) + Rojo deportivo (#dc2626)
+- **Tipografía:** Inter
+- **Animaciones:** Suaves transiciones de 300ms
+
+## 🚀 Deploy
+
+```bash
+git push origin main
+```
+
+Vercel deployará automáticamente.
+
+---
+
+**v1.0.0** | Greislyn Auto Import 2026
